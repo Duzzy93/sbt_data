@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+
+<!-- header 삽입 -->
+<div th:replace="~{layouts/header :: header}"></div>
+
+<!--content-->
+<div class="bg-dark text-white p-5">
+    <h1><span th:text="${username}"></span>님, 반갑습니다!</h1>
+</div>
+
+<!-- footer 삽입 -->
+<div th:replace="~{layouts/footer :: footer}"></div>
