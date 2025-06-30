@@ -1,0 +1,29 @@
+server:
+  port: 8094
+
+spring:
+  application:
+    name: shop
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/webdb
+    username: webuser
+    password: 54321
+
+  jpa:
+    properties:
+      hibernate:
+        show-sql: true
+        format_sql: true
+        ddl-auto: update
+
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
