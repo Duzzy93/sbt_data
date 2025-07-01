@@ -2,17 +2,14 @@ package com.shop.repository;
 
 import com.shop.constant.ItemSellStatus;
 import com.shop.entity.Item;
-import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.TestPropertySource;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 @Transactional
@@ -64,6 +61,7 @@ class ItemRepositoryTest {
       System.out.println(item.toString());
     }
   }
+
   @Test
   @DisplayName("상품명, 상품명상세설명 or 테스트")
   public void findByItemNmOrItemDetailTest(){
