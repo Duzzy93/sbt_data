@@ -2,6 +2,10 @@ server:
   port: 8094
 
 spring:
+  security:
+    user:
+      name: test
+      password: 12345
   application:
     name: shop
   devtools:
