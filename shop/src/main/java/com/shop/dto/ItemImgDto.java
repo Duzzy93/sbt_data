@@ -31,8 +31,8 @@ public class ItemImgDto {
                 .id(itemImg.getId())
                 .imgName(itemImg.getOriImgName())
                 .oriImgName(itemImg.getImgName())
-                .imgUrl(itemImg.getImgUri())
-                .repImgYn(itemImg.getRepimgYn())
+                .imgUrl(itemImg.getImgUrl())
+                .repImgYn(itemImg.getRepImgYn())
                 .build();
 
         return itemImgDto;

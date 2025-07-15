@@ -56,7 +56,7 @@ public class ItemImgService {
       //파일 업로드
       if(!StringUtils.isEmpty(oriImgName)){
         imgName = fileService.uploadFile(itemImgLocation, oriImgName, itemImgFile.getBytes());
-        imgUrl = "/image/item/" + imgName;
+        imgUrl = "/images/item/" + imgName;
       }
 
       //변경감지 - Dirty Checking
