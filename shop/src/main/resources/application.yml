@@ -7,11 +7,6 @@ spring:
       maxFileSize: 20MB
       maxRequestSize: 100MB
 
-  security:
-    user:
-      name: test
-      password: 12345
-
   application:
     name: shop
 
@@ -35,6 +30,7 @@ spring:
       hibernate:
         show_sql: true
         format_sql: true
+        default_batch_size: 1000
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.MySQL8Dialect

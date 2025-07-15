@@ -30,7 +30,7 @@ public class SecurityConfig {
 
     http.authorizeHttpRequests(request -> request
             .requestMatchers("/css/**").permitAll()
-            .requestMatchers("/", "/members/**").permitAll()
+            .requestMatchers("/", "/members/**", "/images/**").permitAll()
             .requestMatchers("/admin/**").hasRole("ADMIN")
             .anyRequest().authenticated());   // 나머지 경로는 인증을 받아야 함.
 
