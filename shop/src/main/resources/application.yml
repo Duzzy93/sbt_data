@@ -2,17 +2,25 @@ server:
   port: 8094
 
 spring:
+  servlet:
+    multipart:
+      maxFileSize: 20MB
+      maxRequestSize: 100MB
+
   security:
     user:
       name: test
       password: 12345
+
   application:
     name: shop
+
   devtools:
     livereload:
       enabled: true
     restart:
       enabled: true
+
   thymeleaf:
     cache: false
 
@@ -38,3 +46,7 @@ logging:
         type:
           descriptor:
             sql: trace
+
+itemImgLocation: D:/shop/item
+
+uploadPath: file:///D:/shop/

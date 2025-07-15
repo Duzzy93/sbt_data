@@ -1,26 +1,32 @@
 package com.shop.dto;
 
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
-@Getter
-@Setter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class ItemDto {
+
   private Long id;
 
   private String itemNm;
 
-  private Integer price;
+  private int price;
+
+  private int stockNumber;
 
   private String itemDetail;
 
-  private String sellStatCd;
+  private String itemSellStatus;
 
   private LocalDateTime regTime;
 
   private LocalDateTime updateTime;
+
 }
