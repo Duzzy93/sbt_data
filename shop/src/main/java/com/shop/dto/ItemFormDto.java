@@ -34,8 +34,10 @@ public class ItemFormDto {
 
   private ItemSellStatus itemSellStatus;
 
+  @Builder.Default
   private List<ItemImgDto> itemImgDtoList = new ArrayList<>();
 
+  @Builder.Default
   private List<Long> itemImgIds = new ArrayList<>();
 
   private static ModelMapper modelMapper = new ModelMapper();

@@ -33,6 +33,7 @@ public class Order extends BaseEntity {
   @Enumerated(EnumType.STRING)
   private OrderStatus orderStatus;
 
+  @Builder.Default
   @OneToMany(fetch = FetchType.LAZY, mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<OrderItem> orderItems = new ArrayList<>();
 
